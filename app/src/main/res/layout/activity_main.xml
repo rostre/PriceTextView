@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <ro.twodoors.pricetextview.PriceTextView
+        android:id="@+id/smart_numeric_text_view1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:text="119" />
+
+    <ro.twodoors.pricetextview.PriceTextView
+        android:id="@+id/smart_numeric_text_view2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/smart_numeric_text_view1"
+        app:suffixSymbol="$"
+        app:suffixSymbolSize="integer"
+        app:text="119"
+        app:textColor="@android:color/holo_red_dark"
+        app:textSize="20sp"
+        app:textStyle="bold" />
+
+    <ro.twodoors.pricetextview.PriceTextView
+        android:id="@+id/smart_numeric_text_view3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/smart_numeric_text_view2"
+        app:suffixSymbol="$"
+        app:suffixSymbolColor="#0127FD"
+        app:suffixSymbolSize="integer"
+        app:text="119"
+        app:textColor="@android:color/holo_red_dark"
+        app:textPercentage="50"
+        app:textSize="20sp"
+        app:textStyle="normal" />
+
+    <ro.twodoors.pricetextview.PriceTextView
+        android:id="@+id/smart_numeric_text_view"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/smart_numeric_text_view3"
+        app:secondaryTextColor="#4CAF50"
+        app:suffixSymbol="Lei/kg"
+        app:suffixSymbolColor="#0127FD"
+        app:suffixSymbolSize="integer"
+        app:text="119.99"
+        app:textColor="@android:color/holo_red_dark"
+        app:textPercentage="70"
+        app:textSize="20sp"
+        app:textStyle="italic" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
